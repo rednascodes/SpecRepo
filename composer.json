@@ -15,6 +15,6 @@
         "doctrine/orm": "*"
     },
     "autoload": {
-        "psr-4": { "SpecRepo": "src/", "SpecRepo": "tests/" }
+        "psr-4": { "SpecRepo\\": ["src/", "tests/"] }
     }
 }

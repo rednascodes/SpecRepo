@@ -10,7 +10,7 @@ abstract class CompositeSpecification implements SpecificationInterface
 	{
 		foreach (func_get_args() as $specification) {
 			if (!$specification instanceof SpecificationInterface) {
-				throw new InvalidArgumentException('Invalid Specification as argument');
+				throw new \InvalidArgumentException('Invalid Specification as argument');
 			}
 			
 			$this->_specifications[] = $specification;

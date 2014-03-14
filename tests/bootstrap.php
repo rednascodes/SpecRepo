@@ -2,6 +2,10 @@
 
 include __DIR__ . '/../autoload_register.php';
 
+/*if (file_exists($file = __DIR__ . '/../vendor/autoload.php')) {
+    include $file;
+}
+
 spl_autoload_register(function ($class) {
     // project-specific namespace prefix
     $prefix = 'SpecRepo\\';

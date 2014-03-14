@@ -2,11 +2,11 @@
 	
 namespace SpecRepo\Converter\Doctrine;
 
-use SpecRepo\Specification;
+use SpecRepo\Specification\SpecificationInterface;
 
-use Doctrine\ORM;
+use Doctrine\DBAL\Query\Expression\ExpressionBuilder;
 
 interface ConverterInterface
 {
-	public function convert(SpecificationInterface $specification, QueryBuilder $queryBuilder);
+	public function convert(SpecificationInterface $specification, ExpressionBuilder $expressionBuilder);
 }

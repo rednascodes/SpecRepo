@@ -2,30 +2,34 @@
 	
 namespace SpecRepo\Converter;
 
-use SpecRepo\Specification;
+use SpecRepo\Specification\SpecificationInterface;
 
 class Locator implements LocatorInterface
 {
 	protected $_converterClasses = array();
 	protected $_converterInstances = array();
 	
-	public function __construct(array $converterClasses)
+	public function __construct(array $converterClasses = array())
 	{
-		$this->_converterClasses = array_merge($this->_convertClasses, $converterClasses);
+		$this->_converterClasses = array_merge($this->_converterClasses, $converterClasses);
 	}
 	
 	public function getConverter($specification)
 	{
-		if ($specification instanceof SpecificationInterface) {
+        if ($specification instanceof SpecificationInterface) {
 			$specification = get_class($specification);
 		}
+        
+        if (!is_string($specification)) {
+            throw new \InvalidArgumentException('Invalid specification.');
+        }
 		
-		if (!array_key_exists($specification, $this->_converterInstances)) {
+		if (array_key_exists($specification, $this->_converterInstances)) {
 			return $this->_converterInstances[$specification];
 		}
 		
 		if (!array_key_exists($specification, $this->_converterClasses)) {
-			throw new Exception('No converter set for specification ' . $specification);
+			throw new \Exception('No converter set for specification ' . $specification);
 		}
 		
 		return $this->_converterInstances[$specification] = 

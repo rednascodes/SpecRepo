@@ -1,6 +1,8 @@
 <?php
 
-spl_autoload_register(function ($class) {
+$loader = require 'vendor/autoload.php';
+
+/*spl_autoload_register(function ($class) {
     // project-specific namespace prefix
     $prefix = 'SpecRepo\\';
 
@@ -26,4 +28,4 @@ spl_autoload_register(function ($class) {
     if (file_exists($file)) {
         require $file;
     }
-});
+});*/
