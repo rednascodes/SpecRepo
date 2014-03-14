@@ -1,0 +1,20 @@
+{
+    "name": "sdwilt/SpecConvert",
+    "type": "library",
+    "description": "Specification to Query converter",
+    "keywords": ["specification", "query", "repository", "ddd"],
+    "authors": [
+        {"name": "Sander de Wilt", "email": "sanderdewilt@gmail.com"}
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "doctrine/orm": "*"
+    },
+    "autoload": {
+        "psr-4": { "SpecConvert": "src/", "SpecConvert": "tests/" }
+    }
+}
