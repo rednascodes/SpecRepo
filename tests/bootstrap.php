@@ -4,7 +4,7 @@ include __DIR__ . '/../autoload_register.php';
 
 spl_autoload_register(function ($class) {
     // project-specific namespace prefix
-    $prefix = 'SpecConvert\\';
+    $prefix = 'SpecRepo\\';
 
     // base directory for the namespace prefix (tests directory)
     $base_dir = __DIR__ . DIRECTORY_SEPARATOR;

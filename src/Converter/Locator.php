@@ -1,8 +1,8 @@
 <?php
 	
-namespace SpecConvert\Converter;
+namespace SpecRepo\Converter;
 
-use SpecConvert\Specification;
+use SpecRepo\Specification;
 
 class Locator implements LocatorInterface
 {

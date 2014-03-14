@@ -1,9 +1,9 @@
 <?php
 
-namespace SpecConvert\Specification;
+namespace SpecRepo\Specification;
 
-use SpecConvert\TestCase;
-use SpecConvert\Specification\AndSpecification;
+use SpecRepo\TestCase;
+use SpecRepo\Specification\AndSpecification;
 
 class AndSpecificationTest extends TestCase
 {	

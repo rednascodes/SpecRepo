@@ -1,5 +1,5 @@
 {
-    "name": "sdwilt/SpecConvert",
+    "name": "rednascodes/SpecRepo",
     "type": "library",
     "description": "Specification to Query converter",
     "keywords": ["specification", "query", "repository", "ddd"],
@@ -15,6 +15,6 @@
         "doctrine/orm": "*"
     },
     "autoload": {
-        "psr-4": { "SpecConvert": "src/", "SpecConvert": "tests/" }
+        "psr-4": { "SpecRepo": "src/", "SpecRepo": "tests/" }
     }
 }

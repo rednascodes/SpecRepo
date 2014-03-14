@@ -1,6 +1,6 @@
 <?php
 	
-namespace SpecConvert\Converter;
+namespace SpecRepo\Converter;
 
 interface LocatorInterface
 {

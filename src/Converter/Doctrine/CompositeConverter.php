@@ -1,10 +1,10 @@
 <?php
 	
-namespace SpecConvert\Converter\Doctrine;
+namespace SpecRepo\Converter\Doctrine;
 
-use SpecConvert\Converter;
-use SpecConvert\Converter\Doctrine;
-use SpecConvert\Specification;
+use SpecRepo\Converter;
+use SpecRepo\Converter\Doctrine;
+use SpecRepo\Specification;
 
 abstract class CompositeConverter implements ConverterInterface
 {

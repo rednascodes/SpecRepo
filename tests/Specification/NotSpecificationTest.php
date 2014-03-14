@@ -1,10 +1,10 @@
 <?php
 
-namespace SpecConvert\Specification;
+namespace SpecRepo\Specification;
 
-use SpecConvert\TestCase;
-use SpecConvert\Specification\MockSpecification;
-use SpecConvert\Specification\NotSpecification;
+use SpecRepo\TestCase;
+use SpecRepo\Specification\MockSpecification;
+use SpecRepo\Specification\NotSpecification;
 
 class NotSpecificationTest extends TestCase
 {

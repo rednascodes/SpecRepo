@@ -1,9 +1,9 @@
 <?php
 
-namespace SpecConvert\Specification;
+namespace SpecRepo\Specification;
 
-use SpecConvert\TestCase;
-use SpecConvert\Specification\OrSpecification;
+use SpecRepo\TestCase;
+use SpecRepo\Specification\OrSpecification;
 
 class OrSpecificationTest extends TestCase
 {	

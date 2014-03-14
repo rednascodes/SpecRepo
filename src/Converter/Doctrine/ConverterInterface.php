@@ -1,8 +1,8 @@
 <?php
 	
-namespace SpecConvert\Converter\Doctrine;
+namespace SpecRepo\Converter\Doctrine;
 
-use SpecConvert\Specification;
+use SpecRepo\Specification;
 
 use Doctrine\ORM;
 

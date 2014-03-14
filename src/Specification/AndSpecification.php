@@ -1,6 +1,6 @@
 <?php
 
-namespace SpecConvert\Specification;
+namespace SpecRepo\Specification;
 	
 class AndSpecification extends CompositeSpecification
 {	
